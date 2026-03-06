@@ -27,7 +27,7 @@ The result shown above was last confirmed on September 23, 2023. You can check t
 
 ## Features
 
-- Minimal design
+- Minimal design with new.css framework
 - Light and dark mode
 - Syntax highlighting
 - RSS feed
@@ -38,7 +38,7 @@ The result shown above was last confirmed on September 23, 2023. You can check t
 
 Hugo Blog Awesome (HBA) is a theme crafted to capture your readers' attention.
 
-Additionally, it's fast, [privacy-conscious](https://themarkup.org/blacklight?url=hba.sid.one), and comes with no external dependencies. That's right. There are no Google fonts, icon packs, or JavaScript frameworks. No trackers or ads to bloat your website.
+Additionally, it's fast, [privacy-conscious](https://themarkup.org/blacklight?url=hba.sid.one), and comes with minimal external dependencies. The visual theme uses new.css via CDN with Inter font. The local ./newcss folder is offline reference only and is ignored by git. No trackers or ads to bloat your website.
 
 Its focus on minimalism and clean UI ensures that your content takes the spotlight. This, coupled with the support for dark mode, provides a stress-free (on the eyes) reading experience for your audience.
 
@@ -319,6 +319,16 @@ This theme is released under the MIT license. For more information read the [Lic
 ### Visitors
 
 [![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fhugo-sid%2Fhugo-blog-awesome&countColor=%2337d67a&style=flat)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fhugo-sid%2Fhugo-blog-awesome)
+
+## QA Checklist
+
+After updating to new.css + Inter:
+
+- Run `hugo server` locally; navigate to homepage and 5 representative pages (index, post, list, 404, about).
+- Check header, footer, code blocks, tables, images and navigation for regressions.
+- Mobile check (browser devtools tablet/phone) — confirm layout and spacing.
+- Search for any double font loads (window.performance.getEntriesByType("resource") in devtools).
+- If a component looks broken, add a targeted rule to `assets/css/newcss-scope.css` rather than modifying new.css directly.
 
 ### Star History
 
