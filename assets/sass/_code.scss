@@ -25,7 +25,7 @@ p > code {
 }
 // Codeblock Theme
 pre {
-  background-color: #1a1b21;
+  background-color: transparent;
   border-radius: .3rem;
   padding: .5rem 1rem;
   display: block;
@@ -41,15 +41,15 @@ pre {
   }
   // Set scrollbar background, track and thumb colors
   &::-webkit-scrollbar-track {
-    background: #606071;
+    background: transparent;
     border-radius: .1rem;
   }
   &::-webkit-scrollbar-thumb {
-    background: #999ea2;
+    background: rgba(0,0,0,0.2);
     border-radius: .3rem;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: #424546;
+    background: rgba(0,0,0,0.3);
   }
 
   > code {
@@ -199,5 +199,13 @@ pre {
 }
 
 .highlight .ss {
-  color: #83a598;
+  color: inherit;
+}
+
+/* Force code highlighting to inherit from new.css (new.css will style code blocks if desired). */
+.highlight,
+.highlight * {
+  color: inherit !important;
+  background-color: transparent !important;
+  border-color: currentColor !important;
 }

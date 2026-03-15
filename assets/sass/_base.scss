@@ -234,7 +234,7 @@ blockquote {
 
 // Underline
 u {
-  text-decoration-color: #d2c7c7;
+  text-decoration-color: currentColor;
 }
 
 // Small
@@ -265,14 +265,14 @@ table {
 
   thead {
     font-weight: $bold-weight;
-    color: $black;
-    border-bottom: 1px solid $light;
+    color: inherit;
+    border-bottom: 1px solid transparent;
   }
 
   th,
   td,
   tr {
-    border: 1px solid $light;
+    border: 1px solid transparent;
     padding: 2px 7px;
   }
 }
@@ -287,8 +287,8 @@ table {
 // When mouse block a text set this color
 mark,
 ::selection {
-  background: #fffba0;
-  color: $black;
+  background: transparent;
+  color: inherit;
 }
 
 // Github Gist clear border
