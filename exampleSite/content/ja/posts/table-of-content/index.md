@@ -1,7 +1,7 @@
 ---
 title: 目次
 date: 2023-05-02
-description: Hugo blog awesomeテーマの中で目次を設定しましょう
+description: Hugo Blog newcssテーマの中で目次を設定しましょう
 ---
 
 ## 目次

@@ -7,7 +7,7 @@ math: true
 ---
 
 Математические обозначения в проекте Hugo можно включить с помощью
-[сторонние библиотеки JavaScript](https://github.com/hugo-sid/hugo-blog-awesome/blob/main/layouts/partials/helpers/katex.html).
+[сторонние библиотеки JavaScript](https://github.com/Permanently/hugo-blog-newcss/blob/main/layouts/partials/helpers/katex.html).
 
 <!--more-->
 

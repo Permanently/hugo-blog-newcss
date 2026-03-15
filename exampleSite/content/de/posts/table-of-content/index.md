@@ -1,7 +1,7 @@
 ---
 title: Inhaltsverzeichnis
 date: 2024-03-04
-description: Konfiguration des Inhaltsverzeichnis im Theme 'Hugo Blog Awesome' 
+description: Konfiguration des Inhaltsverzeichnis im Theme 'Hugo Blog newcss' 
 ---
 
 ## Inhaltsverzeichnis

@@ -1,12 +1,12 @@
 <div align=center>
  <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hugo-sid/hugo-blog-awesome/main/assets/icons/book-icon-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hugo-sid/hugo-blog-awesome/main/assets/icons/book-icon-light.svg">
-  <img alt="Hugo blog awesome logo" src="https://raw.githubusercontent.com/hugo-sid/hugo-blog-awesome/feat/logo-change/assets/icons/book-icon-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Permanently/hugo-blog-newcss/main/assets/icons/book-icon-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Permanently/hugo-blog-newcss/main/assets/icons/book-icon-light.svg">
+  <img alt="Hugo Blog newcss logo" src="https://raw.githubusercontent.com/Permanently/hugo-blog-newcss/main/assets/icons/book-icon-light.svg" />
 </picture>
 
 </div>
-<h1 align=center> Hugo Blog Awesome | <a href="https://hba.sid.one" target="_blank" rel="nofollow">Demo link</a></h1>
+<h1 align=center> Hugo Blog newcss | <a href="https://hba.sid.one" target="_blank" rel="nofollow">Demo link</a></h1>
 
 <h4 align=center>⚡ Fast | 📰 Clean UI | 🌙 Dark mode support | 📱 Responsive design </h4>
 
@@ -28,7 +28,7 @@ The result shown above was last confirmed on September 23, 2023. You can check t
 ## Features
 
 - Minimal design with new.css framework
-- Light and dark mode
+- Automatic light and dark mode based on system preference
 - Syntax highlighting
 - RSS feed
 - No jQuery, no Bootstrap
@@ -36,11 +36,11 @@ The result shown above was last confirmed on September 23, 2023. You can check t
 
 ## Why this theme?
 
-Hugo Blog Awesome (HBA) is a theme crafted to capture your readers' attention.
+Hugo Blog newcss is a theme crafted to capture your readers' attention.
 
 Additionally, it's fast, [privacy-conscious](https://themarkup.org/blacklight?url=hba.sid.one), and comes with minimal external dependencies. The visual theme uses new.css via CDN with Inter font. The local ./newcss folder is offline reference only and is ignored by git. No trackers or ads to bloat your website.
 
-Its focus on minimalism and clean UI ensures that your content takes the spotlight. This, coupled with the support for dark mode, provides a stress-free (on the eyes) reading experience for your audience.
+Its focus on minimalism and clean UI ensures that your content takes the spotlight. This, coupled with the support for automatic dark mode based on system preference, provides a stress-free (on the eyes) reading experience for your audience.
 
 Built with Hugo, SCSS, and vanilla JavaScript.
 
@@ -60,15 +60,15 @@ Initialize your new Hugo site as hugo module by running the following command:
     cd myblog
     hugo mod init github.com/USER/REPO
 
-Afterwards, run this command to add hugo-blog-awesome as module to your site:
+Afterwards, run this command to add hugo-blog-newcss as module to your site:
 
-    hugo mod get github.com/hugo-sid/hugo-blog-awesome
+    hugo mod get github.com/Permanently/hugo-blog-newcss
 
 To make use of the theme, add this module configuration to your site's `hugo.toml`:
 
     [module]
       [[module.imports]]
-        path = "github.com/hugo-sid/hugo-blog-awesome"
+        path = "github.com/Permanently/hugo-blog-newcss"
 
 To preview the theme with example content, run the following command from the `exampleSite` directory:
 
@@ -83,21 +83,26 @@ To create a new Hugo site with this theme as Git submodule, run the following co
 Then, clone this repository into the `themes` directory of your new site:
 
     cd myblog
-    git clone https://github.com/hugo-sid/hugo-blog-awesome.git themes/hugo-blog-awesome
+    git clone https://github.com/Permanently/hugo-blog-newcss.git themes/hugo-blog-newcss
 
 To preview the theme with example content, run the following command from the `exampleSite` directory:
 
-    cd themes/hugo-blog-awesome/exampleSite
+    cd themes/hugo-blog-newcss/exampleSite
     hugo server --themesDir ../..
 
-To use this theme, set the `theme` variable in your site's `hugo.toml` to `hugo-blog-awesome`:
+To use this theme, set the `theme` variable in your site's `hugo.toml` to `hugo-blog-newcss`:
 
-    theme = "hugo-blog-awesome"
+    theme = "hugo-blog-newcss"
 
 ## Configuration
 
 You can take a look at the `hugo.toml` file in the `exampleSite` directory for an example configuration.
 It is recommended that you copy the `hugo.toml` file from the `exampleSite` directory to the root directory of your Hugo site. You can then edit the `hugo.toml` file to suit your needs.
+
+### Theme-specific changes
+- **Dark mode:** Automatically follows system preference via new.css. No manual toggle.
+- **Language selector:** Displays flag emojis instead of language codes (configurable via `data/flags.yml`).
+- **Colors:** All theming controlled by new.css; custom overrides removed for consistency.
 
 ### Adding favicon
 
@@ -112,7 +117,7 @@ Social icons can be added by configuring `hugo.toml` file in the following manne
 ```toml
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/hugo-sid"
+url = "https://github.com/Permanently"
 
 [[params.socialIcons]]
 name = "twitter"
@@ -259,14 +264,14 @@ To use another comments system, provide your own `comments.html` partial in `lay
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/hugo-sid/hugo-blog-awesome/blob/main/CONTRIBUTING.md).
+Please read [CONTRIBUTING.md](https://github.com/Permanently/hugo-blog-newcss/blob/main/CONTRIBUTING.md).
 
 ## Contributors
 
-Thanks to these wonderful people for contributing to Hugo blog awesome:
+Thanks to these wonderful people for contributing to Hugo Blog newcss:
 
-<a href="https://github.com/hugo-sid/hugo-blog-awesome/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=hugo-sid/hugo-blog-awesome" />
+<a href="https://github.com/Permanently/hugo-blog-newcss/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Permanently/hugo-blog-newcss" />
 </a>
 
 ## Websites using this theme
@@ -310,15 +315,17 @@ The social icons are made possible thanks to [Aditya Telange](https://github.com
 
 Thanks to [piharpi](https://harpi.me/) for creating the [Jekyll klise theme](https://github.com/piharpi/jekyll-klise). It served as an inspiration to create this Hugo theme.
 
+This theme is a fork of [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome) with new.css integration.
+
 ## License
 
-This theme is released under the MIT license. For more information read the [License](https://github.com/hugo-sid/hugo-blog-awesome/blob/main/LICENSE).
+This theme is released under the MIT license. For more information read the [License](https://github.com/Permanently/hugo-blog-newcss/blob/main/LICENSE).
 
 ## Stats
 
 ### Visitors
 
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fhugo-sid%2Fhugo-blog-awesome&countColor=%2337d67a&style=flat)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fhugo-sid%2Fhugo-blog-awesome)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FPermanently%2Fhugo-blog-newcss&countColor=%2337d67a&style=flat)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FPermanently%2Fhugo-blog-newcss)
 
 ## QA Checklist
 
@@ -328,8 +335,9 @@ After updating to new.css + Inter:
 - Check header, footer, code blocks, tables, images and navigation for regressions.
 - Mobile check (browser devtools tablet/phone) — confirm layout and spacing.
 - Search for any double font loads (window.performance.getEntriesByType("resource") in devtools).
+- Verify dark mode follows system preference automatically (no toggle).
 - If a component looks broken, add a targeted rule to `assets/css/newcss-scope.css` rather than modifying new.css directly.
 
 ### Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=hugo-sid/hugo-blog-awesome&type=Date)](https://star-history.com/#hugo-sid/hugo-blog-awesome&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Permanently/hugo-blog-newcss&type=Date)](https://star-history.com/#Permanently/hugo-blog-newcss&Date)

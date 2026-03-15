@@ -1,7 +1,7 @@
 ---
 title: I Sommari
 date: 2023-05-02
-description: Setup table of content in Hugo blog awesome theme
+description: Setup table of content in Hugo Blog newcss theme
 ---
 
 ## Sommario
