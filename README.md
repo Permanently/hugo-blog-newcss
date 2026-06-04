@@ -169,6 +169,7 @@ url = "/index.xml"
 | `buymeacoffee`  | buymeacoffee.com                |
 | `calendly`      | calendly.com                    |
 | `codeforces`    | codeforces.com                  |
+| codeberg        | codeberg.org                    |
 | `codepen`       | codepen.io                      |
 | `cryptohack`    | cryptohack.org                  |
 | `ctftime`       | ctftime.org                     |
