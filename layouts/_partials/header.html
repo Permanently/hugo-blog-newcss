@@ -40,23 +40,13 @@
                     </li>
                     <li>
                         <select aria-label="Select Language" class="lang-list" id="select-language" onchange="location = this.value;">
-                            {{ $siteLanguages := .Site.Languages}}
-                            {{ $pageLang := .Page.Lang}}
+                            {{ $pageLang := .Page.Lang }}
                             {{ range .Page.AllTranslations }}
-                                {{ $translation := .}}
-                                {{ range $siteLanguages }}
-                                    {{ if eq $translation.Lang .Lang }}
-                                        {{ $selected := false }}
-                                        {{ if eq $pageLang .Lang}}
-                                            <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageCode | upper }}
-                                            </option>
-                                        {{ else }}
-                                            <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageCode | upper }}</option>
-                                        {{ end }}
-                                    {{ end }}
-                                {{ end }}
+                                <option id="{{ .Language }}" value="{{ .Permalink }}" {{ cond (eq $pageLang .Lang) "selected" "" }}>
+                                    {{ .Language.Locale | upper }}
+                                </option>
                             {{ end }}
-                        </select>                
+                        </select>
                     </li>
                 {{ end }}
             </ul>
