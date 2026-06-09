@@ -1,3 +1,3 @@
-module github.com/hugo-sid/hugo-blog-awesome
+module github.com/Permanently/hugo-blog-newcss
 
-go 1.22.0
+go 1.26
