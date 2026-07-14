@@ -43,7 +43,7 @@
                             {{ $pageLang := .Page.Lang }}
                             {{ range .Page.AllTranslations }}
                                 <option id="{{ .Language }}" value="{{ .Permalink }}"{{ if eq $pageLang .Lang }} selected{{ end }}>
-                                    {{ .Language.LanguageCode | upper }}
+                                    {{ .Language.Locale | upper }}
                                 </option>
                             {{ end }}
                         </select>
