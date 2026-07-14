@@ -42,7 +42,7 @@
                         <select aria-label="Select Language" class="lang-list" id="select-language" onchange="location = this.value;">
                             {{ $pageLang := .Page.Lang }}
                             {{ range .Page.AllTranslations }}
-                                <option id="{{ .Language }}" value="{{ .Permalink }}" {{ cond (eq $pageLang .Lang) "selected" "" }}>
+                                <option id="{{ .Language }}" value="{{ .Permalink }}"{{ if eq $pageLang .Lang }} selected{{ end }}>
                                     {{ .Language.Locale | upper }}
                                 </option>
                             {{ end }}
