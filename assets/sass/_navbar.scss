@@ -13,13 +13,10 @@
   .logo {
     float: left;
     margin: .5rem 0 0 1rem;
-    > svg {
-      opacity: 0.7;
-    }
+    color: $black;
+    opacity: 0.7;
     &:hover {
-      > svg {
-        opacity: 1;
-      }
+      opacity: 1;
     }
     @include media-query($on-mobile) {
       padding-top: .3rem;
